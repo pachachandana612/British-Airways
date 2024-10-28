@@ -1,30 +1,59 @@
-# British-Airways
-This helps you to learn How data scientists at British Airways apply analytical skills to make tangible impact by providing recommendations, tools, and models that drive key business decisions. How using data and predictive models helps British Airways acquire customers before they embark on their holidays.
-This is a virtual internship from British Airways through forage
-In this Project there are 2 tasks
+# British Airways Virtual Internship Project
 
-Task1:
-> Scrape data from the web
-The first thing to do will be to scrape review data from the web. For this, you should use a website called Skytrax.
+This repository contains my work on the British Airways virtual internship, completed through Forage. The project focuses on understanding customer reviews and predicting customer booking behavior, leveraging data scraping, text analysis, and machine learning.
 
-> The team leader wants you to focus on reviews specifically about the airline itself. You should collect as much data as you can in order to improve the output of your analysis. To get started with the data collection, you can use the “Jupyter Notebook” in the Resources section below to run some Python code that will help to collect some data. 
+## Project Overview
 
-> Analyse data
-Once you have your dataset, you need to prepare it. The data will be very messy and contain purely text. You will need to perform data cleaning in order to prepare the data for analysis. When the data is clean, you should perform your own analysis to uncover some insights. As a starting point, you could look at topic modelling, sentiment analysis or wordclouds to provide some insight into the content of the reviews. It is recommended to complete this task using Python, however, you can use any tool that you wish. You can use some of the documentation websites provided in the Resources section below to analyse the data.
+### Task 1: Customer Review Sentiment Analysis
+In Task 1, the goal was to scrape, clean, and analyze customer reviews from the Skytrax website. This task involved text processing, sentiment analysis, and summarizing insights in a presentation slide.
 
-> Please ensure that you have created a folder called "data" and mapped your file path.
+#### Steps:
+1. **Data Scraping**: Used Python and Jupyter Notebook to collect 1,000 customer reviews focused on British Airways' services.
+2. **Data Cleaning**: Processed raw text data to prepare it for analysis, removing unnecessary characters and formatting.
+3. **Sentiment Analysis**: Performed sentiment analysis, categorizing reviews into Positive, Negative, and Neutral.
+4. **Data Visualization**: Created visualizations such as word clouds and sentiment distributions to summarize key insights.
+5. **Presentation**: Key findings were summarized in a PowerPoint slide, showing sentiment distribution as:
+   - Positive Reviews: 507
+   - Negative Reviews: 393
+   - Neutral Reviews: 100
 
-> Present insights
-Your manager would like you to summarise your findings within a single PowerPoint slide, so that they can present the results at the next board meeting. You should create visualisations and metrics to include within this slide, as well as clear and concise explanations in order to quickly provide the key points from your analysis. Use the “PowerPoint Template” provided to complete the slide.
+#### Files for Task 1:
+- `BritishAirways Task1.ipynb`: Jupyter Notebook with data scraping, cleaning, and sentiment analysis code.
+- `Presentation - Task 1.pptx`: Summary slide with visualizations and insights.
 
-Task2:
-> Explore and prepare the dataset
-First, spend some time exploring the dataset in the “Getting Started” Jupyter Notebook provided in the Resources section below to understand the different columns and some basic statistics of the dataset. Then, you should consider how to prepare the dataset for a predictive model. You should think about any new features you want to create in order to make your model even better. You can make use of the Resources provided to get you started with this task. 
+### Task 2: Predicting Customer Buying Behavior
+In Task 2, the objective was to predict customer bookings using machine learning. This involved feature engineering, model training, and performance evaluation.
 
->Train a machine learning model
-When your data is ready for modelling, you should train a machine learning model to be able to predict the target outcome, which is a customer making a booking. For this task, you should use an algorithm that easily allows you to output information about how each variable within the model contributes to its predictive power. For example, a RandomForest is very good for this purpose.
+#### Steps:
+1. **Data Exploration**: Explored and preprocessed the `customer_booking.csv` dataset, analyzing key features.
+2. **Feature Engineering**: Created new features based on existing data to improve model accuracy.
+3. **Model Training**: Trained a Random Forest Classifier and Logistic Regression model to predict the likelihood of booking.
+4. **Model Evaluation**: Evaluated model performance using cross-validation, accuracy, and feature importance metrics.
+5. **Presentation**: Summarized model findings in a PowerPoint slide, highlighting the most correlated features:
+   - Wants Extra Baggage
+   - Wants Preferred Seat
+   - Wants In-Flight Meals
+   - Number of Passengers
+   - Flight Hour
 
->Evaluate model and present findings
-After training your model, you should evaluate how well it performed by conducting cross-validation and outputting appropriate evaluation metrics. Furthermore, you should create a visualisation to interpret how each variable contributed to the model. Finally, you should summarise your findings in a single slide to be sent to your manager. Use the “PowerPoint Template” provided in the Resources section below to create your summary and make use of the links provided to help with this task.
+#### Files for Task 2:
+- `Task2Code.ipynb`: Jupyter Notebook for data preparation, feature engineering, model training, and evaluation.
+- `customer_booking.csv`: Dataset containing customer booking data.
+- `Task2_Presentation.pptx`: Presentation slide summarizing model results and insights.
 
->It is recommended that the analysis portion of this task is done in Python.
+## Key Findings
+- **Task 1**: Sentiment analysis showed a majority of positive reviews, with some negative feedback, offering insights into customer satisfaction trends.
+- **Task 2**: Random Forest Classifier outperformed Logistic Regression in predicting booking likelihood. Key features related to extra services and flight details influenced booking behavior.
+
+## Tools and Technologies
+- **Python**: Data scraping, cleaning, analysis, and model training
+- **Libraries**: Pandas, BeautifulSoup, Scikit-learn, Matplotlib, and Seaborn
+- **PowerPoint**: Presentation slides summarizing findings for each task
+- **Jupyter Notebook**: Main environment for code execution and analysis
+
+## Conclusion
+This project provided hands-on experience in web scraping, text analysis, feature engineering, and machine learning model development. The insights gathered here can help British Airways optimize customer engagement strategies and improve booking prediction accuracy.
+
+---
+
+For more details on each task, please refer to the respective files and presentations in this repository.
